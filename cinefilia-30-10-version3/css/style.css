@@ -1,0 +1,204 @@
+* {
+   /* padding: 0; */
+   box-sizing: border-box; 
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, header, main, footer {
+    border: 3px darkred solid;
+    min-height: 50px;
+    margin: 0.5rem;
+    min-width: 400px; 
+}
+
+body {
+    /* background-color: #f2f2f2; */
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main {
+    min-height: 200px;
+    overflow: auto;
+    background-color: white;
+}
+
+header {
+    background: #FFF;
+    box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
+}
+
+footer {
+    background: #FFF
+}
+
+/* contenido ppal */ 
+main>div {
+    /*border: 2px black solid;*/
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: 65%;
+}
+
+main>aside {
+    /*border: 2px black solid;*/
+    min-height: 180px;
+    min-width: 32%;
+    margin: 0.5rem;
+    float: left;
+    width: auto;
+}
+
+.secciones {
+    /*border: 2px darkgreen solid;*/
+    min-height: 50px;
+    margin: 0.5rem;
+}
+
+.secciones article {
+    /*border: 2px yellow solid;*/
+    margin: 0.5rem;
+    min-height: 20px;
+}
+
+#gif-ppal {
+    width: 100%;
+}
+
+/* logo y menu */
+.header.logo {
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.header-menubar {
+    /*border: 2px black solid;*/
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem 0  0.5rem 1rem;
+}
+
+.header-menubar ul {
+    list-style: none;
+}
+
+.header-menubar li {
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0.5rem 0;
+}   
+
+.header-menubar a {
+    text-decoration: none;
+    color: black;
+}   
+
+.header-menubar a:hover {
+    color: purple
+}
+
+.header-menubar li a {
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+/* PRINT VERSION */
+@media print {
+    h3:after {
+      content: ' - PRINT';
+      display: inline;
+    }
+  }
+  /* PHONE VERSION */
+  @media only screen and (min-width: 320px) {
+    h3:after {
+      content: ' - PHONE';
+      display: inline;
+    }
+  }
+  /* TABLET VERSION */
+  @media only screen and (min-width: 768px) {
+    h3:after {
+      content: ' - TABLET';
+      display: inline;
+    }
+  }
+  /* DESKTOP VERSION */
+  @media only screen and (min-width: 980px) {
+    h3:after {
+      content: ' - DESKTOP';
+      display: inline;
+    }
+  }
+  /* PRINT VERSION */
+  @media print {
+    h3:after {
+      content: ' - PRINT';
+      display: inline;
+    }
+  }
+
+  /* PHONE LANDSCAPE VERSION */
+  @media only screen and (min-width: 320px) and (orientation: landscape) {
+    h3:after {
+      content: ' - PHONE LANDSCAPE';
+      display: inline;
+    }
+  }
+  /* PHONE PORTRAIT VERSION */
+  @media only screen and (min-width: 320px) and (orientation: portrait) {
+    h3:after {
+      content: ' - PHONE PORTRAIT';
+      display: inline;
+    }
+  }
+
+  /* TABLET LANDSCAPE VERSION - not work, are the same as desktop */
+  @media only screen and (min-width: 768px) and (orientation: landscape) {
+    h3:after {
+      content: ' - TABLET LANDSCAPE';
+      display: inline;
+    }
+  }
+  /* TABLET PORTRAIT VERSION */
+  @media only screen and (min-width: 768px) and (orientation: portrait) {
+    h3:after {
+      content: ' - TABLET PORTRAIT';
+      display: inline;
+    }
+  }
+  /* DESKTOP VERSION */
+  @media only screen and (min-width: 980px) {
+    h3:after {
+      content: ' - DESKTOP';
+      display: inline;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    h3:after {
+      content: ' - TABLET PORTRAIT';
+      display: inline;
+    }
+    h3 {
+      color: red;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    h3:after {
+      content: ' - PHONE LANDSCAPE AND PORTRAIT VERSION';
+      display: inline;
+    }
+  }
